@@ -1,7 +1,7 @@
 import StudentModel from "../models/StudentModel.js";
 
 const createStudent = async (req, res) => {
-  let { name, email, mobile, subjects } = req.body;
+  let { name, email, mobile } = req.body;
 
   //   const oldStudent = await StudentModel.findOne({ mobile });
 
@@ -9,7 +9,6 @@ const createStudent = async (req, res) => {
     name,
     email,
     mobile,
-    subjects,
   });
 
   if (newStudent) {
